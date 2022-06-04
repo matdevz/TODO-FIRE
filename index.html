@@ -10,45 +10,53 @@
 	</head>
 	<body>
 		<header class="head">
-			<button class="head__btn">SIGN</button>
-			<button class="head__btn">LOGIN</button>
+			<button id="signBtn" class="head__btn">SIGN</button>
+			<button id="loginBtn" class="head__btn">LOGIN</button>
 		</header>
 		<main class="main">
-			<section class="main__auth">
+			<section class="main__auth" id="sign">
 				<div class="main__wrapper">
 					<img src="./assets/signWrapper.jpg" alt="Wrapper Sign" />
 				</div>
 
 				<form class="main__form">
+					<label for="name">Nome</label>
 					<input
+						name="name"
 						type="text"
 						class="main__form-input"
 						placeholder="Insira deu nome"
 					/>
+					<label for="email">Email</label>
 					<input
+						name="email"
 						type="email"
 						class="main__form-input"
 						placeholder="Insira seu email"
 					/>
+					<label for="senha">Senha</label>
 					<input
+						name="senha"
 						type="password"
 						class="main__form-input"
 						placeholder="Insira uma senha"
 					/>
-					<button class="main__form-btn">sign</button>
+					<button class="main__form-btn">Sign</button>
 				</form>
 			</section>
-			<section class="main__auth">
+			<section class="main__auth" id="login">
 				<div class="main__wrapper">
 					<img src="./assets/loginWrapper.jpg" alt="Wrapper Login" />
 				</div>
 
 				<form class="main__form">
+					<label for="email">Email</label>
 					<input
 						type="email"
 						class="main__form-input"
 						placeholder="Insira seu email"
 					/>
+					<label for="senha">Senha</label>
 					<input
 						type="password"
 						class="main__form-input"
@@ -58,5 +66,7 @@
 				</form>
 			</section>
 		</main>
+
+		<script src="./scripts/switchAuth.js"></script>
 	</body>
 </html>
