@@ -4,20 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./styles/index.css" />
 		<title>Todo Fire - Sign e Login</title>
 	</head>
 	<body>
 		<header class="head">
-			<button class="head__sign">SIGN</button>
-			<button class="head__login">LOGIN</button>
+			<button class="head__btn">SIGN</button>
+			<button class="head__btn">LOGIN</button>
 		</header>
 		<main class="main">
-			<section class="main__sign">
+			<section class="main__auth">
 				<div class="main__wrapper">
 					<img src="./assets/signWrapper.jpg" alt="Wrapper Sign" />
 				</div>
 
-				<form action="" class="main__form">
+				<form class="main__form">
 					<input
 						type="text"
 						class="main__form-input"
@@ -33,14 +35,15 @@
 						class="main__form-input"
 						placeholder="Insira uma senha"
 					/>
+					<button class="main__form-btn">sign</button>
 				</form>
 			</section>
-			<section class="main__login">
+			<section class="main__auth">
 				<div class="main__wrapper">
 					<img src="./assets/loginWrapper.jpg" alt="Wrapper Login" />
 				</div>
 
-				<form action="" class="main__form">
+				<form class="main__form">
 					<input
 						type="email"
 						class="main__form-input"
@@ -51,6 +54,7 @@
 						class="main__form-input"
 						placeholder="Insira uma senha"
 					/>
+					<button class="main__form-btn">Login</button>
 				</form>
 			</section>
 		</main>
